@@ -1,3 +1,3 @@
- for(const pro in mobile){
-//     console.log(pro)
-//  }
+ for(const ke of keys){
+    console.log(ke,mobile[ke])
+ }
