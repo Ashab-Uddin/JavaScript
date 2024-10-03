@@ -1,0 +1,4 @@
+
+document.getElementById('fruits').style.backgroundColor = 'blue'
+
+document.getElementById('fruits').style.textAlgin = 'center'
