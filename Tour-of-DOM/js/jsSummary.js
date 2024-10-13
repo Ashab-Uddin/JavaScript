@@ -14,3 +14,26 @@ document.getElementById('btn-send').addEventListener('click',function(){
     p.innerText = inputFieldText;
     inputTexts.value = '';
 })
+
+//step-1: add event listener to the post button.
+document.getElementById('postBtn').addEventListener('click',function(){
+
+    //step-2: get comment text.
+    const commentBox = document.getElementById('newComment');
+    const commentText = commentBox.value;
+    
+    //step-3: set the comment text at the comment container
+    /*
+    1. get the comment container
+    2. create a new comment Element (p tag)
+    3. set the comment text at the p tag
+    4. add the p tag using appendChild(p)
+    */
+    const commentContainer = document.getElementById('comment-container');
+    const p = document.createElement('p');
+    p.innerText = commentText;
+    commentContainer.appendChild(p);
+
+    //Step-4: clear the text area.
+    commentBox.value = '';
+})
