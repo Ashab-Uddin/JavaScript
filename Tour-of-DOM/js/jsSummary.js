@@ -37,3 +37,22 @@ document.getElementById('postBtn').addEventListener('click',function(){
     //Step-4: clear the text area.
     commentBox.value = '';
 })
+
+document.getElementById('text-field').addEventListener('keyup',function(event){
+    const text = event.target.value;
+    const DeleteBtn = document.getElementById('btn-delete');
+    if(text === 'delete'){
+        DeleteBtn.removeAttribute('disabled');
+    }
+    else{
+        DeleteBtn.setAttribute('disabled',true);
+    }
+
+})
+document.getElementById('btn-delete').addEventListener('click',function(){
+    const sectreatInfo = document.getElementById('secreat-info');
+    sectreatInfo.style.display = 'none';
+    
+    const textClear = document.getElementById('text-field');
+    textClear.value = '';
+})
