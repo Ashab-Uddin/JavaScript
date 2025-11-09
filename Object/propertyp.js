@@ -9,3 +9,6 @@ const person ={
 
 //show only one property of an object
 console.log(person.age);
+
+//Bracket notation diye acces of an object
+console.log(person['age']);
