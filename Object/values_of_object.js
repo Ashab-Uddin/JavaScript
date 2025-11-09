@@ -5,5 +5,5 @@ var computer = {
     HDD: '512 GB',
     Monitor: 'HP'
 }
-var values = Object.keys(computer);
+var values = Object.values(computer);
 console.log(values);
