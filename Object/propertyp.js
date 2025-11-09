@@ -5,4 +5,7 @@ const person ={
     salary:25000,
     married:true
 }
-console.log(person);
+//console.log(person);
+
+//show only one property of an object
+console.log(person.age);
