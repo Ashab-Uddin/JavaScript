@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Box</title>
+    <style>
+        button{
+            background-color: lightskyblue;
+            width: 150px;
+            height: 50px;
+            color: black;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="myConfirm()">Try it</button>
+    <p id="demo"></p>
+    <script>
+        function myConfirm(){
+            let txt;
+            if(confirm("Press Button!")){
+                txt = "You Press OK!";
+            }
+            else{
+                txt = "You Press Cancel!";
+            }
+            document.getElementById("demo").innerHTML=txt;
+        }
+    </script>
+</body>
+</html>
