@@ -12,3 +12,4 @@ function evenSizedString(str){
 const result = evenSizedString('Dhaka')
 
 console.log(result)
+
